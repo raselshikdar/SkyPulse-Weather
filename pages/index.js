@@ -33,12 +33,15 @@ export default function Home() {
 
   const handleGeolocation = () => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        const { latitude, longitude } = position.coords
-        fetchWeather(`lat=${latitude}&lon=${longitude}`)
-      }, () => {
-        setError('Geolocation permission denied.')
-      })
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords
+          fetchWeather(`lat=${latitude}&lon=${longitude}`)
+        },
+        () => {
+          setError('Geolocation permission denied.')
+        }
+      )
     } else {
       setError('Geolocation is not supported.')
     }
