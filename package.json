@@ -10,7 +10,8 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "date-fns": "^2.30.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
