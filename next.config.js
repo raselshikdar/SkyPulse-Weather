@@ -3,9 +3,4 @@ module.exports = {
   images: {
     domains: ['openweathermap.org'],
   },
-  experimental: {
-    fontLoaders: [
-      { loader: '@next/font/google', options: { subsets: ['latin'] } }
-    ]
-  }
-}
+};
