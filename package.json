@@ -11,7 +11,8 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "date-fns": "^2.30.0"
+    "date-fns": "^2.30.0",
+    "react-icons": "^4.12.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
