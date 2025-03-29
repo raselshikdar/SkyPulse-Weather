@@ -8,9 +8,13 @@ export default function Forecast({ forecast }) {
         {forecast.map((day, index) => (
           <div key={index} className="flex flex-col items-center">
             <p className="font-semibold">{format(new Date(day.dt * 1000), 'EEE')}</p>
-            <img src={`http://openweathermap.org/img/wn/${day.icon}@2x.png`} alt="Icon" className="w-12" />
+            <img
+              src={`http://openweathermap.org/img/wn/${day.icon}@2x.png`}
+              alt="Icon"
+              className="w-12"
+            />
             <p>{Math.round(day.temp)}°C</p>
-            <p className="capitalize text-sm">{day.weather}</p>
+            <p className="capitalize text-sm">{day.weather[0]?.description}</p> {/* Fixed */}
           </div>
         ))}
       </div>
