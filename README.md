@@ -13,7 +13,7 @@ This is an advanced, feature-rich weather forecast website built with Next.js an
    git clone https://github.com/yourusername/nextjs-weather-app.git
    cd nextjs-weather-app
    ```
-   2. Install Dependencies
+   2. **Install Dependencies**
 
 ```
 npm install
