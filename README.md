@@ -9,7 +9,7 @@ This is an advanced, feature-rich weather forecast website built with Next.js an
 ## Setup Instructions
 
 1. **Clone the Repository**
-   ```bash
+   ```
    git clone https://github.com/yourusername/nextjs-weather-app.git
    cd nextjs-weather-app
    ```
