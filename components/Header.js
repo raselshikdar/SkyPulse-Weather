@@ -1,12 +1,19 @@
+import { FiMapPin } from 'react-icons/fi'
+
 export default function Header({ onGeolocation }) {
   return (
-    <header className="flex justify-between items-center p-4 bg-blue-600 text-white">
-      <h1 className="text-xl font-bold">SkyPulse Weather</h1>
-      <button
+    <header className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+      <h1 className="text-3xl font-bold text-primary dark:text-white flex items-center gap-2">
+        <FiMapPin className="inline-block" />
+        SkyPulse
+      </h1>
+      
+      <button 
         onClick={onGeolocation}
-        className="p-2 bg-blue-500 hover:bg-blue-700 rounded"
+        className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition-colors"
       >
-        Use Current Location
+        <FiMapPin />
+        Detect My Location
       </button>
     </header>
   )
